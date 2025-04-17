@@ -67,24 +67,28 @@ mvn spring-boot:run
       "sampler_name": "euler",
       "scheduler": "normal",
       "denoise": 1
-    }
+    },
+    "class_type": "KSampler"
   },
   "5": {
     "inputs": {
       "width": 512,
       "height": 512,
       "batch_size": 1
-    }
+    },
+    "class_type": "EmptyLatentImage"
   },
   "6": {
     "inputs": {
-      "text": "beautiful scenery nature glass bottle landscape"
-    }
+      "text": "beautiful scenery"
+    },
+    "class_type": "CLIPTextEncode"
   },
   "7": {
     "inputs": {
       "text": "text, watermark"
-    }
+    },
+    "class_type": "CLIPTextEncode"
   }
 }
 ```
